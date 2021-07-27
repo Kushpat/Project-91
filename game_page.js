@@ -1,0 +1,13 @@
+function sEnd(){
+    number1=document.getElementById("number_1").value;
+    number2=document.getElementById("number_2").value;
+    actual_answer= parseInt(number1) * parseInt(number2);
+
+    question_number="<h4>" + number1 + " X " + number2 + "</h4>";
+    input_box="<br> Answer: <input id='answer' class='form-control' type='text'>";
+    check_button="<br> <br> <button onclick='check()' class='btn btn-info'>Check</button>";
+    row= question_number + input_box + check_button;
+    document.getElementById("output").innerHTML=row;
+    document.getElementById("number_1").value="";
+    document.getElementById("number_2").value="";
+}
